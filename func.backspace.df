@@ -1,0 +1,176 @@
+{
+    "blocks": [
+        {
+            "id": "block",
+            "block": "func",
+            "args": {
+                "items": [
+                    {
+                        "item": {
+                            "id": "hint",
+                            "data": {
+                                "id": "function"
+                            }
+                        },
+                        "slot": 25
+                    },
+                    {
+                        "item": {
+                            "id": "bl_tag",
+                            "data": {
+                                "option": "False",
+                                "tag": "Is Hidden",
+                                "action": "dynamic",
+                                "block": "func"
+                            }
+                        },
+                        "slot": 26
+                    }
+                ]
+            },
+            "data": "backspace"
+        },
+        {
+            "id": "block",
+            "block": "set_var",
+            "args": {
+                "items": [
+                    {
+                        "item": {
+                            "id": "var",
+                            "data": {
+                                "name": "len",
+                                "scope": "local"
+                            }
+                        },
+                        "slot": 0
+                    },
+                    {
+                        "item": {
+                            "id": "var",
+                            "data": {
+                                "name": "%default code",
+                                "scope": "unsaved"
+                            }
+                        },
+                        "slot": 1
+                    }
+                ]
+            },
+            "action": "StringLength"
+        },
+        {
+            "id": "block",
+            "block": "set_var",
+            "args": {
+                "items": [
+                    {
+                        "item": {
+                            "id": "var",
+                            "data": {
+                                "name": "%default code",
+                                "scope": "unsaved"
+                            }
+                        },
+                        "slot": 0
+                    },
+                    {
+                        "item": {
+                            "id": "var",
+                            "data": {
+                                "name": "%default code",
+                                "scope": "unsaved"
+                            }
+                        },
+                        "slot": 1
+                    },
+                    {
+                        "item": {
+                            "id": "num",
+                            "data": {
+                                "name": "0"
+                            }
+                        },
+                        "slot": 2
+                    },
+                    {
+                        "item": {
+                            "id": "num",
+                            "data": {
+                                "name": "%math(%var(len)-1)"
+                            }
+                        },
+                        "slot": 3
+                    }
+                ]
+            },
+            "action": "TrimString"
+        },
+        {
+            "id": "block",
+            "block": "if_var",
+            "args": {
+                "items": [
+                    {
+                        "item": {
+                            "id": "var",
+                            "data": {
+                                "name": "len",
+                                "scope": "local"
+                            }
+                        },
+                        "slot": 0
+                    },
+                    {
+                        "item": {
+                            "id": "num",
+                            "data": {
+                                "name": "1"
+                            }
+                        },
+                        "slot": 1
+                    }
+                ]
+            },
+            "action": "="
+        },
+        {
+            "id": "bracket",
+            "direct": "open",
+            "type": "norm"
+        },
+        {
+            "id": "block",
+            "block": "set_var",
+            "args": {
+                "items": [
+                    {
+                        "item": {
+                            "id": "var",
+                            "data": {
+                                "name": "%default code",
+                                "scope": "unsaved"
+                            }
+                        },
+                        "slot": 0
+                    },
+                    {
+                        "item": {
+                            "id": "txt",
+                            "data": {
+                                "name": ""
+                            }
+                        },
+                        "slot": 1
+                    }
+                ]
+            },
+            "action": "="
+        },
+        {
+            "id": "bracket",
+            "direct": "close",
+            "type": "norm"
+        }
+    ]
+}

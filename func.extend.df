@@ -1,0 +1,82 @@
+{
+    "blocks": [
+        {
+            "id": "block",
+            "block": "func",
+            "args": {
+                "items": [
+                    {
+                        "item": {
+                            "id": "pn_el",
+                            "data": {
+                                "name": "chars",
+                                "type": "txt",
+                                "plural": false,
+                                "optional": false
+                            }
+                        },
+                        "slot": 0
+                    },
+                    {
+                        "item": {
+                            "id": "hint",
+                            "data": {
+                                "id": "function"
+                            }
+                        },
+                        "slot": 25
+                    },
+                    {
+                        "item": {
+                            "id": "bl_tag",
+                            "data": {
+                                "option": "False",
+                                "tag": "Is Hidden",
+                                "action": "dynamic",
+                                "block": "func"
+                            }
+                        },
+                        "slot": 26
+                    }
+                ]
+            },
+            "data": "extend"
+        },
+        {
+            "id": "block",
+            "block": "set_var",
+            "args": {
+                "items": [
+                    {
+                        "item": {
+                            "id": "var",
+                            "data": {
+                                "name": "%default code",
+                                "scope": "unsaved"
+                            }
+                        },
+                        "slot": 0
+                    },
+                    {
+                        "item": {
+                            "id": "txt",
+                            "data": {
+                                "name": "%var(%default code)%var(chars)"
+                            }
+                        },
+                        "slot": 1
+                    }
+                ]
+            },
+            "action": "="
+        },
+        {
+            "id": "block",
+            "block": "call_func",
+            "args": {
+                "items": []
+            },
+            "data": "updateMenu"
+        }
+    ]
+}

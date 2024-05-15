@@ -1,0 +1,140 @@
+{
+    "blocks": [
+        {
+            "id": "block",
+            "block": "event",
+            "args": {
+                "items": []
+            },
+            "action": "ClickMenuSlot"
+        },
+        {
+            "id": "block",
+            "block": "if_game",
+            "args": {
+                "items": [
+                    {
+                        "item": {
+                            "id": "item",
+                            "data": {
+                                "item": "{Count:1b,DF_NBT:3700,id:\"minecraft:player_head\",tag:{CustomModelData:0,HideFlags:255,SkullOwner:{Id:[I;-1723649822,1350780932,-1715117799,-1359875747],Name:\"DF-HEAD\",Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTkyZTMxZmZiNTljOTBhYjA4ZmM5ZGMxZmUyNjgwMjAzNWEzYTQ3YzQyZmVlNjM0MjNiY2RiNDI2MmVjYjliNiJ9fX0=\"}]}},display:{Lore:[],Name:'{\"italic\":false,\"extra\":[{\"color\":\"green\",\"text\":\"Confirm\"}],\"text\":\"\"}'}}}"
+                            }
+                        },
+                        "slot": 0
+                    },
+                    {
+                        "item": {
+                            "id": "bl_tag",
+                            "data": {
+                                "option": "Ignore stack size/durability",
+                                "tag": "Comparison Mode",
+                                "action": "EventItemEquals",
+                                "block": "if_game"
+                            }
+                        },
+                        "slot": 26
+                    }
+                ]
+            },
+            "action": "EventItemEquals"
+        },
+        {
+            "id": "bracket",
+            "direct": "open",
+            "type": "norm"
+        },
+        {
+            "id": "block",
+            "block": "call_func",
+            "args": {
+                "items": []
+            },
+            "data": "confirm"
+        },
+        {
+            "id": "block",
+            "block": "control",
+            "args": {
+                "items": []
+            },
+            "action": "End"
+        },
+        {
+            "id": "bracket",
+            "direct": "close",
+            "type": "norm"
+        },
+        {
+            "id": "block",
+            "block": "if_game",
+            "args": {
+                "items": [
+                    {
+                        "item": {
+                            "id": "item",
+                            "data": {
+                                "item": "{Count:1b,DF_NBT:3700,id:\"minecraft:player_head\",tag:{CustomModelData:0,HideFlags:255,SkullOwner:{Id:[I;-1349462070,-1398453054,-1623569944,-1284183228],Name:\"DF-HEAD\",Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWM1YThhYThhNGMwMzYwMGEyYjVhNGViNmJlYjUxZDU5MDI2MGIwOTVlZTFjZGFhOTc2YjA5YmRmZTU2NjFjNiJ9fX0=\"}]}},display:{Lore:[],Name:'{\"italic\":false,\"extra\":[{\"color\":\"red\",\"text\":\"Backspace\"}],\"text\":\"\"}'}}}"
+                            }
+                        },
+                        "slot": 0
+                    },
+                    {
+                        "item": {
+                            "id": "bl_tag",
+                            "data": {
+                                "option": "Ignore stack size/durability",
+                                "tag": "Comparison Mode",
+                                "action": "EventItemEquals",
+                                "block": "if_game"
+                            }
+                        },
+                        "slot": 26
+                    }
+                ]
+            },
+            "action": "EventItemEquals"
+        },
+        {
+            "id": "bracket",
+            "direct": "open",
+            "type": "norm"
+        },
+        {
+            "id": "block",
+            "block": "call_func",
+            "args": {
+                "items": []
+            },
+            "data": "backspace"
+        },
+        {
+            "id": "block",
+            "block": "call_func",
+            "args": {
+                "items": []
+            },
+            "data": "updateMenu"
+        },
+        {
+            "id": "block",
+            "block": "control",
+            "args": {
+                "items": []
+            },
+            "action": "End"
+        },
+        {
+            "id": "bracket",
+            "direct": "close",
+            "type": "norm"
+        },
+        {
+            "id": "block",
+            "block": "call_func",
+            "args": {
+                "items": []
+            },
+            "data": "type"
+        }
+    ]
+}

@@ -1,0 +1,226 @@
+{
+    "blocks": [
+        {
+            "id": "block",
+            "block": "event",
+            "args": {
+                "items": []
+            },
+            "action": "Join"
+        },
+        {
+            "id": "block",
+            "block": "set_var",
+            "args": {
+                "items": [
+                    {
+                        "item": {
+                            "id": "var",
+                            "data": {
+                                "name": "%default code",
+                                "scope": "unsaved"
+                            }
+                        },
+                        "slot": 0
+                    },
+                    {
+                        "item": {
+                            "id": "txt",
+                            "data": {
+                                "name": ""
+                            }
+                        },
+                        "slot": 1
+                    }
+                ]
+            },
+            "action": "="
+        },
+        {
+            "id": "block",
+            "block": "control",
+            "args": {
+                "items": [
+                    {
+                        "item": {
+                            "id": "num",
+                            "data": {
+                                "name": "5"
+                            }
+                        },
+                        "slot": 0
+                    },
+                    {
+                        "item": {
+                            "id": "bl_tag",
+                            "data": {
+                                "option": "Ticks",
+                                "tag": "Time Unit",
+                                "action": "Wait",
+                                "block": "control"
+                            }
+                        },
+                        "slot": 26
+                    }
+                ]
+            },
+            "action": "Wait"
+        },
+        {
+            "id": "block",
+            "block": "player_action",
+            "args": {
+                "items": [
+                    {
+                        "item": {
+                            "id": "item",
+                            "data": {
+                                "item": "{Count:1b,DF_NBT:3700,id:\"minecraft:player_head\",tag:{CustomModelData:0,HideFlags:255,PublicBukkitValues:{\"hypercube:add\":\":0\"},SkullOwner:{Id:[I;1035280052,-20166462,-1492748572,-1667604944],Name:\"DF-HEAD\",Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmQ2ODM0M2JkMGIxMjlkZTkzY2M4ZDNiYmEzYjk3YTJmYWE3YWRlMzhkOGE2ZTJiODY0Y2Q4NjhjZmFiIn19fQ==\"}]}},display:{Lore:[],Name:'{\"italic\":false,\"extra\":[{\"color\":\"white\",\"text\":\"0\"}],\"text\":\"\"}'}}}"
+                            }
+                        },
+                        "slot": 1
+                    },
+                    {
+                        "item": {
+                            "id": "item",
+                            "data": {
+                                "item": "{Count:1b,DF_NBT:3700,id:\"minecraft:player_head\",tag:{CustomModelData:0,HideFlags:255,PublicBukkitValues:{\"hypercube:add\":\":1\"},SkullOwner:{Id:[I;-960800503,-1510914598,-1564059388,-1852211194],Name:\"DF-HEAD\",Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDJhNmYwZTg0ZGFlZmM4YjIxYWE5OTQxNWIxNmVkNWZkYWE2ZDhkYzBjM2NkNTkxZjQ5Y2E4MzJiNTc1In19fQ==\"}]}},display:{Lore:[],Name:'{\"italic\":false,\"extra\":[{\"color\":\"white\",\"text\":\"1\"}],\"text\":\"\"}'}}}"
+                            }
+                        },
+                        "slot": 2
+                    },
+                    {
+                        "item": {
+                            "id": "item",
+                            "data": {
+                                "item": "{Count:1b,DF_NBT:3700,id:\"minecraft:player_head\",tag:{CustomModelData:0,HideFlags:255,PublicBukkitValues:{\"hypercube:add\":\":2\"},SkullOwner:{Id:[I;-851810525,2127252838,-1360033686,1333280833],Name:\"DF-HEAD\",Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTZmYWI5OTFkMDgzOTkzY2I4M2U0YmNmNDRhMGI2Y2VmYWM2NDdkNDE4OWVlOWNiODIzZTljYzE1NzFlMzgifX19\"}]}},display:{Lore:[],Name:'{\"italic\":false,\"extra\":[{\"color\":\"white\",\"text\":\"2\"}],\"text\":\"\"}'}}}"
+                            }
+                        },
+                        "slot": 3
+                    },
+                    {
+                        "item": {
+                            "id": "item",
+                            "data": {
+                                "item": "{Count:1b,DF_NBT:3700,id:\"minecraft:player_head\",tag:{CustomModelData:0,HideFlags:255,PublicBukkitValues:{\"hypercube:add\":\":3\"},SkullOwner:{Id:[I;1812946579,-1635234369,-1287790888,-499543828],Name:\"DF-HEAD\",Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2QzMTliOTM0M2YxN2EzNTYzNmJjYmMyNmI4MTk2MjVhOTMzM2RlMzczNjExMWYyZTkzMjgyN2M4ZTc0OSJ9fX0=\"}]}},display:{Lore:[],Name:'{\"italic\":false,\"extra\":[{\"color\":\"white\",\"text\":\"3\"}],\"text\":\"\"}'}}}"
+                            }
+                        },
+                        "slot": 4
+                    },
+                    {
+                        "item": {
+                            "id": "item",
+                            "data": {
+                                "item": "{Count:1b,DF_NBT:3700,id:\"minecraft:player_head\",tag:{CustomModelData:0,HideFlags:255,PublicBukkitValues:{\"hypercube:add\":\":4\"},SkullOwner:{Id:[I;-423819193,1470711224,-1220764606,-821465180],Name:\"DF-HEAD\",Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDE5OGQ1NjIxNjE1NjExNDI2NTk3M2MyNThmNTdmYzc5ZDI0NmJiNjVlM2M3N2JiZTgzMTJlZTM1ZGI2In19fQ==\"}]}},display:{Lore:[],Name:'{\"italic\":false,\"extra\":[{\"color\":\"white\",\"text\":\"4\"}],\"text\":\"\"}'}}}"
+                            }
+                        },
+                        "slot": 5
+                    },
+                    {
+                        "item": {
+                            "id": "item",
+                            "data": {
+                                "item": "{Count:1b,DF_NBT:3700,id:\"minecraft:player_head\",tag:{CustomModelData:0,HideFlags:255,SkullOwner:{Id:[I;-1723649822,1350780932,-1715117799,-1359875747],Name:\"DF-HEAD\",Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTkyZTMxZmZiNTljOTBhYjA4ZmM5ZGMxZmUyNjgwMjAzNWEzYTQ3YzQyZmVlNjM0MjNiY2RiNDI2MmVjYjliNiJ9fX0=\"}]}},display:{Lore:[],Name:'{\"italic\":false,\"extra\":[{\"color\":\"green\",\"text\":\"Confirm\"}],\"text\":\"\"}'}}}"
+                            }
+                        },
+                        "slot": 7
+                    },
+                    {
+                        "item": {
+                            "id": "item",
+                            "data": {
+                                "item": "{Count:1b,DF_NBT:3700,id:\"minecraft:player_head\",tag:{CustomModelData:0,HideFlags:255,PublicBukkitValues:{\"hypercube:add\":\":5\"},SkullOwner:{Id:[I;-1718757196,348933446,-1781085460,257903450],Name:\"DF-HEAD\",Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2ZiOTFiYjk3NzQ5ZDZhNmVlZDQ0NDlkMjNhZWEyODRkYzRkZTZjMzgxOGVlYTVjN2UxNDlkZGRhNmY3YzkifX19\"}]}},display:{Lore:[],Name:'{\"italic\":false,\"extra\":[{\"color\":\"white\",\"text\":\"5\"}],\"text\":\"\"}'}}}"
+                            }
+                        },
+                        "slot": 10
+                    },
+                    {
+                        "item": {
+                            "id": "item",
+                            "data": {
+                                "item": "{Count:1b,DF_NBT:3700,id:\"minecraft:player_head\",tag:{CustomModelData:0,HideFlags:255,PublicBukkitValues:{\"hypercube:add\":\":6\"},SkullOwner:{Id:[I;-1843147201,-218281114,-2026926265,-1099176281],Name:\"DF-HEAD\",Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWM2MTNmODBhNTU0OTE4YzdhYjJjZDRhMjc4NzUyZjE1MTQxMmE0NGE3M2Q3YTI4NmQ2MWQ0NWJlNGVhYWUxIn19fQ==\"}]}},display:{Lore:[],Name:'{\"italic\":false,\"extra\":[{\"color\":\"white\",\"text\":\"6\"}],\"text\":\"\"}'}}}"
+                            }
+                        },
+                        "slot": 11
+                    },
+                    {
+                        "item": {
+                            "id": "item",
+                            "data": {
+                                "item": "{Count:1b,DF_NBT:3700,id:\"minecraft:player_head\",tag:{CustomModelData:0,HideFlags:255,PublicBukkitValues:{\"hypercube:add\":\":7\"},SkullOwner:{Id:[I;-1502918921,-423015538,-1629771058,-1399913943],Name:\"DF-HEAD\",Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWUxOThmZDgzMWNiNjFmMzkyN2YyMWNmOGE3NDYzYWY1ZWEzYzdlNDNiZDNlOGVjN2QyOTQ4NjMxY2NlODc5In19fQ==\"}]}},display:{Lore:[],Name:'{\"italic\":false,\"extra\":[{\"color\":\"white\",\"text\":\"7\"}],\"text\":\"\"}'}}}"
+                            }
+                        },
+                        "slot": 12
+                    },
+                    {
+                        "item": {
+                            "id": "item",
+                            "data": {
+                                "item": "{Count:1b,DF_NBT:3700,id:\"minecraft:player_head\",tag:{CustomModelData:0,HideFlags:255,PublicBukkitValues:{\"hypercube:add\":\":8\"},SkullOwner:{Id:[I;-70788096,1831945194,-1126170524,1274085969],Name:\"DF-HEAD\",Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODRhZDEyYzJmMjFhMTk3MmYzZDJmMzgxZWQwNWE2Y2MwODg0ODlmY2ZkZjY4YTcxM2IzODc0ODJmZTkxZTIifX19\"}]}},display:{Lore:[],Name:'{\"italic\":false,\"extra\":[{\"color\":\"white\",\"text\":\"8\"}],\"text\":\"\"}'}}}"
+                            }
+                        },
+                        "slot": 13
+                    },
+                    {
+                        "item": {
+                            "id": "item",
+                            "data": {
+                                "item": "{Count:1b,DF_NBT:3700,id:\"minecraft:player_head\",tag:{CustomModelData:0,HideFlags:255,PublicBukkitValues:{\"hypercube:add\":\":9\"},SkullOwner:{Id:[I;1815137102,817907096,-1620202706,2065678408],Name:\"DF-HEAD\",Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWY3YWEwZDk3OTgzY2Q2N2RmYjY3YjdkOWQ5YzY0MWJjOWFhMzRkOTY2MzJmMzcyZDI2ZmVlMTlmNzFmOGI3In19fQ==\"}]}},display:{Lore:[],Name:'{\"italic\":false,\"extra\":[{\"color\":\"white\",\"text\":\"9\"}],\"text\":\"\"}'}}}"
+                            }
+                        },
+                        "slot": 14
+                    },
+                    {
+                        "item": {
+                            "id": "item",
+                            "data": {
+                                "item": "{Count:1b,DF_NBT:3700,id:\"minecraft:player_head\",tag:{CustomModelData:0,HideFlags:255,SkullOwner:{Id:[I;-1349462070,-1398453054,-1623569944,-1284183228],Name:\"DF-HEAD\",Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWM1YThhYThhNGMwMzYwMGEyYjVhNGViNmJlYjUxZDU5MDI2MGIwOTVlZTFjZGFhOTc2YjA5YmRmZTU2NjFjNiJ9fX0=\"}]}},display:{Lore:[],Name:'{\"italic\":false,\"extra\":[{\"color\":\"red\",\"text\":\"Backspace\"}],\"text\":\"\"}'}}}"
+                            }
+                        },
+                        "slot": 16
+                    }
+                ]
+            },
+            "action": "ShowInv"
+        },
+        {
+            "id": "block",
+            "block": "player_action",
+            "args": {
+                "items": [
+                    {
+                        "item": {
+                            "id": "bl_tag",
+                            "data": {
+                                "option": "Bottom row",
+                                "tag": "Row to Remove",
+                                "action": "RemoveInvRow",
+                                "block": "player_action"
+                            }
+                        },
+                        "slot": 26
+                    }
+                ]
+            },
+            "action": "RemoveInvRow"
+        },
+        {
+            "id": "block",
+            "block": "player_action",
+            "args": {
+                "items": [
+                    {
+                        "item": {
+                            "id": "comp",
+                            "data": {
+                                "name": "Enter the code"
+                            }
+                        },
+                        "slot": 0
+                    }
+                ]
+            },
+            "action": " SetInvName "
+        }
+    ]
+}
